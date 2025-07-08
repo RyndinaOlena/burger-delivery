@@ -1,5 +1,5 @@
 import  { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useCart } from './hooks/useCart';
 import Header from './components/Header';
 import HomePage from './components/HomePage';
@@ -32,7 +32,7 @@ function App() {
   
 
   return (
-    <Router >
+
       <div className="min-h-screen bg-gray-50">
         <Header 
           cartCount={getTotalItems()} 
@@ -41,7 +41,7 @@ function App() {
         
         <main>
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="*" element={<HomePage />} />
             <Route 
               path="/menu" 
               element={<MenuPage onAddToCart={addToCart} />} 
@@ -75,7 +75,7 @@ function App() {
           onClose={() => setIsSuccessModalOpen(false)}
         />
       </div>
-    </Router>
+
   );
 }
 
