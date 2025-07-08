@@ -1,0 +1,13 @@
+# Burger Delivery — React + Vite + TypeScript
+
+Простий сайт доставки їжі, зроблений на React з TypeScript, побудований за допомогою Vite.
+
+---
+
+## Початок роботи
+
+### Клонування репозиторію
+
+```bash
+git clone https://github.com/your-username/burger-delivery.git
+cd burger-delivery
